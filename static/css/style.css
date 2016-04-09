@@ -429,8 +429,8 @@ body.search .page-not-found-block{ margin-top: 0px; }
 .limoking-item-title-wrapper.limoking-center-divider.limoking-medium .limoking-nav-title { margin-top: 15px; font-size: 22px; }
 .limoking-item-title-wrapper.limoking-center-divider.limoking-large .limoking-nav-title,
 .limoking-item-title-wrapper.limoking-center-divider.limoking-extra-large .limoking-nav-title { margin-top: 15px; padding-bottom: 3px; font-size: 26px; }
-.limoking-item-title-wrapper.limoking-center-icon-divider .limoking-nav-title .limoking-flex-prev{ margin-right: 15px; }
-.limoking-item-title-wrapper.limoking-center-icon-divider .limoking-nav-title .limoking-flex-next{ margin-left: 15px; }
+.limoking-item-title-wrapper.limoking-center-icon-divider .limoking-nav-title .limoking-flex-prev{ margin-right: 5px; }
+.limoking-item-title-wrapper.limoking-center-icon-divider .limoking-nav-title .limoking-flex-next{ margin-left: 5px; }
 .limoking-item-title-wrapper.limoking-center-icon-divider.limoking-small .limoking-nav-title,
 .limoking-item-title-wrapper.limoking-center-icon-divider.limoking-medium .limoking-nav-title { font-size: 24px; }
 .limoking-item-title-wrapper.limoking-center-icon-divider.limoking-large .limoking-nav-title,
