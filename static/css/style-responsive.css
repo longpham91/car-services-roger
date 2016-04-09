@@ -64,7 +64,7 @@ html body{ min-width: 300px; }
 	/*--- header ---*/
 	body .top-navigation-left{ float: none; text-align: center; padding: 3px 0px;}
 	body .top-navigation-right { float: none; text-align: center; padding: 3px 0px;}
-	body .limoking-logo { padding-right: 60px; float: none; }
+	body .limoking-logo { padding-right: 0; float: none; }
 	body .limoking-logo-inner { margin-left: 0px; }
 	body .limoking-logo-container { padding-top: 1px; }
 	
