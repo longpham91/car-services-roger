@@ -1,8 +1,8 @@
 html.ltie9 body, body{ min-width: 1140px; } .container{ max-width: 1140px; } .limoking-caption-wrapper .limoking-caption-inner{ max-width: 1140px; }
 .body-wrapper.limoking-boxed-style{ max-width: 1220px; overflow: hidden; } .body-wrapper.limoking-boxed-style .limoking-header-wrapper{ max-width: 1220px; margin: 0px auto; }
-.limoking-logo-inner{ max-width: 205px; }
-.limoking-logo{ margin-top: 50px; }
-.limoking-logo{ margin-bottom: 45px; }
+.limoking-logo-inner{ max-width: 250px; }
+.limoking-logo{ margin-top: 25px; }
+.limoking-logo{ margin-bottom: 25px; }
 .limoking-logo-right-text{ margin-top: 42px; }
 .limoking-navigation-wrapper{ margin-top: 35px; }
 .limoking-navigation-wrapper .limoking-main-menu > li > a{ padding-bottom: 45px; }
