@@ -705,15 +705,13 @@
                     }
                 );
             }
-            if (!Modernizr.inputtypes.date) {
-            // If not native HTML5 support, fallback to jQuery datePicker
-                $('input[type=time]').timepicker(
-                    {
-                        'showDuration': true,
-                        'scrollDefault': 'now'
-                    }
-                );
-            }
+            
+            $('input[type=time]').timepicker(
+                {
+                    'showDuration': true,
+                    'scrollDefault': 'now'
+                }
+            );
         });
     </script>
 </body>
