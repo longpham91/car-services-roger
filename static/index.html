@@ -31,6 +31,7 @@
     <link rel='stylesheet' id='ms-main-css' href='/css/masterslider.main.css?ver=2.25.4' type='text/css' media='all' />
     <link rel='stylesheet' id='ms-custom-css' href='/css/custom.css?ver=2.3' type='text/css' media='all' />
     <link rel='stylesheet' id='ms-custom-css' href='/css/jquery-ui.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='ms-custom-css' href='/css/jquery.timepicker.css' type='text/css' media='all' />
     <!-- load the script for older ie version -->
     <!--[if lt IE 9]>
         <script src="/js/html5.js" type="text/javascript"></script>
@@ -692,6 +693,7 @@
     <script type='text/javascript' src='/js/jquery.transit.min.js?ver=1.0'></script>
     <script type='text/javascript' src='/js/gdlr-car-script.js?ver=1.0'></script>
     <script type='text/javascript' src='/js/jquery-ui.min.js'></script>
+    <script type='text/javascript' src='/js/jquery.timepicker.min.js'></script>
     <script type='text/javascript' src='/js/modernizr-custom.js'></script>
     <script>
         jQuery(function($){           
@@ -700,6 +702,15 @@
                 $('input[type=date]').datepicker({
                     // Consistent format with the HTML5 picker
                         dateFormat : 'mm/dd/yyyy'
+                    }
+                );
+            }
+            if (!Modernizr.inputtypes.date) {
+            // If not native HTML5 support, fallback to jQuery datePicker
+                $('input[type=time]').timepicker(
+                    {
+                        'showDuration': true,
+                        'scrollDefault': 'now'
                     }
                 );
             }
