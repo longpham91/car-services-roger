@@ -1,5 +1,5 @@
 var express      = require('express');
-var router = express.Router();
+var router       = express.Router();
 var app          = express();
 //var favicon      = require('serve-favicon');
 var bodyParser   = require('body-parser');
