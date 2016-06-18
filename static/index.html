@@ -30,6 +30,7 @@
     <link rel='stylesheet' id='wpgmp-frontend-css' href='/css/frontend.css?ver=4.3.3' type='text/css' media='all' />
     <link rel='stylesheet' id='ms-main-css' href='/css/masterslider.main.css?ver=2.25.4' type='text/css' media='all' />
     <link rel='stylesheet' id='ms-custom-css' href='/css/custom.css?ver=2.3' type='text/css' media='all' />
+    <link rel='stylesheet' id='ms-custom-css' href='/css/jquery-ui.min.css' type='text/css' media='all' />
     <script type='text/javascript' src='/js/jquery.js?ver=1.11.3'></script>
     <script type='text/javascript' src='/js/jquery-migrate.min.js?ver=1.2.1'></script>
     <script type='text/javascript' src='https://maps.google.com/maps/api/js?libraries=geometry%2Cplaces%2Cweather%2Cpanoramio%2Cdrawing&#038;language=en&#038;ver=4.3.3'></script>
@@ -700,6 +701,7 @@
     <script type='text/javascript' src='/js/masterslider.min.js?ver=2.25.4'></script>
     <script type='text/javascript' src='/js/jquery.transit.min.js?ver=1.0'></script>
     <script type='text/javascript' src='/js/gdlr-car-script.js?ver=1.0'></script>
+    <script type='text/javascript' src='/js/jquery-ui.min.js'></script>
     <script type='text/javascript' src='/js/modernizr-custom.js'></script>
     <script>
         $(function(){           
@@ -707,10 +709,8 @@
             // If not native HTML5 support, fallback to jQuery datePicker
                 $('input[type=date]').datepicker({
                     // Consistent format with the HTML5 picker
-                        dateFormat : 'yy-mm-dd'
-                    },
-                    // Localization
-                    $.datepicker.regional['it']
+                        dateFormat : 'mm/dd/yyyy'
+                    }
                 );
             }
         });
