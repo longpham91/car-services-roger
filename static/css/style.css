@@ -1577,7 +1577,7 @@ margin-right: 15px; margin-bottom: 15px; }
 .limoking-fluid-video-wrapper iframe{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; }  	
 
 /*--- contact form 7 ---*/
-.wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 input[type="date"],
+.wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 input[type="date"], .wpcf7 input[type="time"],
 .wpcf7 input[type="password"], .wpcf7 textarea { padding: 16px 19px; width: 100%; font-size: 13px; border: 0px; }
 .wpcf7 input[type="submit"] { padding: 10px 20px; letter-spacing: 0; text-transform: none; }
 .wpcf7 span.wpcf7-form-control-wrap {display: block; padding-right: 46px; margin-top: 7px; }	
@@ -1675,6 +1675,7 @@ body .fancybox-skin { background: #f3f3f3; }
 .limoking-car-contact-form label{ color: #6d6d6d; }
 .limoking-car-contact-form h5 { text-transform: uppercase; font-weight: 700;    letter-spacing: 1.3px; margin-bottom: 25px; }
 .limoking-car-contact-form input[type="date"], 
+.limoking-car-contact-form input[type="time"],
 .limoking-car-contact-form input[type="text"], 
 .limoking-car-contact-form input[type="email"], 
 .limoking-car-contact-form input[type="password"], 
@@ -1687,6 +1688,7 @@ body .fancybox-skin { background: #f3f3f3; }
 .limoking-car-contact-form .wpcf7-contact-half-left { float: left; width: 48%; margin-right: 2%; margin-bottom: 20px; }
 .limoking-car-contact-form .wpcf7-contact-half-right { float: left; width: 48%; margin-left: 2%; margin-bottom: 20px; }
 .limoking-car-contact-form .wpcf7 input[type="date"],
+.limoking-car-contact-form .wpcf7 input[type="time"],
 .limoking-car-contact-form .wpcf7 input[type="text"], 
 .limoking-car-contact-form .wpcf7 input[type="email"], 
 .limoking-car-contact-form .wpcf7 input[type="password"], 
