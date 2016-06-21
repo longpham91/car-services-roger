@@ -1,8 +1,9 @@
-var express      = require('express');
-var router       = express.Router();
-var app          = express();
-//var favicon      = require('serve-favicon');
-var bodyParser   = require('body-parser');
+var express           = require('express');
+var router            = express.Router();
+var app               = express();
+//var favicon         = require('serve-favicon');
+var bodyParser        = require('body-parser');
+var BookingController = require('./routes/booking');
 
 /**
  * Routing & middlewares
@@ -11,9 +12,9 @@ app.use(express.static(__dirname + '/static'));
 //app.use(favicon(__dirname + '/favicon.ico'));
 app.use(bodyParser.json({ extended: true }));
 
-// app.use(router);
+app.use(router);
 
-// router.post('/booking', MessageController.post);
+router.post('/booking', BookingController.post);
 
 app.use(function (request, response) {
     response.status(404).json({
@@ -28,4 +29,11 @@ app.use(function (error, request, response, next) {
         code: error.code
     });
 });
+
+app.set('port', process.env.PORT || 3000);
+
+app.listen(app.get('port'), () => {
+	console.log('Foodee service runs on port: ' + app.get('port'));
+});
+
 module.exports = app;

@@ -437,6 +437,33 @@
 		return features;
 	};
 
+	$.wpcf7Submit = function(){
+		$('.wpcf7-form').submit(function () {
+			var action = $(this).attr('action');
+			$.ajax({
+				url: action,
+				type: 'POST',
+				data: {
+					email: $('#mailchimp-email').val(),
+				},
+				success: function (data) {
+					$('.success-mc p').html(data.message);
+					$('#mc-form input').val('');
+					$('.success-mc').fadeIn();
+				},
+				error: function (data) {
+					$('.error-mc p').html(data.responseJSON.message);
+					$('#mc-form input').val('');
+					$('.error-mc').fadeIn();
+					setTimeout(function () {
+						$('.error-mc').fadeOut();
+					}, 3000);
+				}
+			});
+			return false;
+		});
+	}
+
 	$(function() {
 		_wpcf7.supportHtml5 = $.wpcf7SupportHtml5();
 		$('div.wpcf7 > form').wpcf7InitForm();
