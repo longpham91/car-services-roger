@@ -11,7 +11,7 @@ exports.post = function (request, response) {
 	}
 
 	var smtpTransport = nodemailer.createTransport('smtps://uscar123%40gmail.com:chuanchuan@smtp.gmail.com');
-	var name = request.body.firstName + request.body.lastName;
+	var name = request.body.firstName + ' ' + request.body.lastName;
 	var email = request.body.email;
 	var phone = request.body.phone;
 	var tripType = request.body.tripType;
@@ -51,6 +51,6 @@ exports.post = function (request, response) {
 		if (error) {
 			return response.status(500).json({ success: false, data: error});
 		}
-		response.json({success: true, data: 'Message sent: ' + info.response});
+		response.json({success: true, message: 'Booking completed!'});
 	});
 };
