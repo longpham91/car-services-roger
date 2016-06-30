@@ -22,7 +22,7 @@
 				});
 				return true;
 			},
-			data: { '_wpcf7_is_ajax_call': 1 },
+			data: {},
 			dataType: 'json',
 			success: $.wpcf7AjaxSuccess,
 			error: function(xhr, status, error, $form) {
