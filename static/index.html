@@ -583,7 +583,7 @@
                                 <div class="wpcf7-contact-half-left">
                                     <label>Pickup Time</label><br />
                                     <span class="wpcf7-form-control-wrap pickup-time">
-                                        <input type="time" name="pickup-time" value="" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-time" aria-invalid="false" />
+                                        <input type="text" id="pickup-time" name="pickup-time" value="" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-time" aria-invalid="false" />
                                     </span>
                                 </div>
                                 <div class="wpcf7-contact-half-right">
@@ -709,7 +709,7 @@
                 });
             }
 
-            $('input[type=time]').timepicker({
+            $('#pickup-time').timepicker({
                 'showDuration': true,
                 'scrollDefault': 'now'
             });
